@@ -1,6 +1,19 @@
 package main
 
+import (
+	"fmt"
+	"strings"
+)
+
 func main() {
+	correctedSentence := strings.ReplaceAll(sentence, " i ", " I ")
+	fmt.Println(correctedSentence)
+
+	aCount := strings.Count(strings.ToLower(goHistory), "a")
+	fmt.Println(aCount)
+
+	uppercaseScream := strings.ReplaceAll(text, "scream", "SCREAM")
+	fmt.Println(uppercaseScream)
 }
 
 // 1. Given the following sentence: Change all of the lowercase letters i, in reference to yourself, to the uppercase I
