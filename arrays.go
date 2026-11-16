@@ -1,6 +1,19 @@
 package main
 
+import "fmt"
+
 func main() {
+	fmt.Println(len(contacts))
+
+	contacts = append(contacts, jake, matt, tony, andrew, tom)
+
+	var instructors []Contact
+	for _, contact := range contacts {
+		if contact.Title == "instructor" {
+			instructors = append(instructors, contact)
+		}
+	}
+	fmt.Println(instructors)
 }
 
 type Contact struct {

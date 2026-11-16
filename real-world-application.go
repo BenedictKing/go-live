@@ -1,6 +1,15 @@
 package main
 
+import (
+	"fmt"
+	"strings"
+)
+
 func main() {
+	for index, color := range crayola1990 {
+		crayola1990[index] = strings.ReplaceAll(strings.ToLower(color), " ", "-")
+	}
+	fmt.Println(crayola1990)
 }
 
 /*

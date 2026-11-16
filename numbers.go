@@ -1,6 +1,30 @@
 package main
 
+import (
+	"fmt"
+	"strconv"
+)
+
 func main() {
+	number8, err := strconv.Atoi(string8)
+	if err != nil {
+		panic(err)
+	}
+	sum := num10 + number8 + one
+	fmt.Println(sum)
+
+	for number := 20; number <= 100; number++ {
+		if number%3 == 0 {
+			fmt.Println(number)
+		}
+	}
+
+	total := 0
+	for _, score := range scores {
+		total += score
+	}
+	average := float64(total) / float64(len(scores))
+	fmt.Println(average)
 }
 
 // 1. Provide the sum of the following variables
